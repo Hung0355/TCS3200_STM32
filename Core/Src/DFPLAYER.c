@@ -1,17 +1,3 @@
-/******************************************************************************************************************
-@File:  	DFPlayer Mini Module
-@Author:  Khue Nguyen
-@Website: khuenguyencreator.com
-@Youtube: https://www.youtube.com/channel/UCt8cFnPOaHrQXWmVkk-lfvg
-Huong dan su dung:
-- Su dung thu vien HAL
-- Khoi tao UART Baud 9600
-- Khoi tao bien DFPlayer : DFPLAYER_Name MP3;
-- Khoi tao DFPlayer do:
-	DFPLAYER_Init(&MP3, &huart1);
-- Su dung cac ham phai truyen dia chi cua DFPlayer do: 
-	DFPLAYER_Play(&MP3);
-******************************************************************************************************************/
 #include "DFPLAYER.h"
 uint8_t SendFrame[10] = {0x7E, 0xFF, 0x06, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xEF};
 
